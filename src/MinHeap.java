@@ -1,9 +1,28 @@
 public class MinHeap {
-
-    //implementing using https://www.geeksforgeeks.org/binary-heap/#
+    class element{
+        int key;
+        double value;
+        public element(int key, double value)
+        {
+            this.key = key;
+            this.value = value;
+        }
+        public int getKey(){
+            return this.key;
+        }
+        public double getValue(){
+            return this.value;
+        }
+        public void setKey(int key){
+            this.key = key;
+        }
+        public void setValue(double value){
+            this.value = value;
+        }
+    }
 
     //to store array of elements in heap
-    private int[] heapArray;
+    private element[] heapArray;
 
     //max size of the heap
     private int capacity;
@@ -19,15 +38,17 @@ public class MinHeap {
     //constructor
     public MinHeap(int k){
         capacity = k;
-        heapArray = new int[capacity];
+        heapArray = new element[capacity];
         current_heap_size = 0;
     }
 
     //node swap
-    private void swap(int[] arr, int a, int b){
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
+    private void swap(element[] arr, element a, element b){
+//        for
+//        element temp = arr[a];
+//        arr[a] = arr[b];
+//        arr[b] = temp;
+        return;
     }
 
     //returns the parent's index for the given node index
